@@ -6,6 +6,7 @@
 .navbar-1 {
     font-family: "Baskerville Old Face";
     color: black;
+    font-size: 30pt;
 }
 
 .newitems {
@@ -30,4 +31,9 @@
     font-family: "Baskerville Old Face";
     color: black;
     text-align: center;
+}
+
+.official-color {
+    color: #8699B1;
+    font-size: 65pt;
 }
