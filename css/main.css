@@ -1,8 +1,33 @@
 @font-face {
-        font-family: "Baskerville Old Face";
-        src: url(../ttf/font1.ttf);
+    font-family: "Baskerville Old Face";
+    src: url(../ttf/font1.ttf);
 }
-.navbar-1{
-        font-family: "Baskerville Old Face";
-	color: black;
+
+.navbar-1 {
+    font-family: "Baskerville Old Face";
+    color: black;
+}
+
+.newitems {
+    font-family: "Baskerville Old Face";
+    color: black;
+    text-align: center;
+}
+
+.skirts {
+    font-family: "Baskerville Old Face";
+    color: black;
+    text-align: center;
+}
+
+.youtube {
+    font-family: "Baskerville Old Face";
+    color: black;
+    text-align: center;
+}
+
+.insta {
+    font-family: "Baskerville Old Face";
+    color: black;
+    text-align: center;
 }
