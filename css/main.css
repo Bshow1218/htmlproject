@@ -3,6 +3,10 @@
     src: url(../ttf/font1.ttf);
 }
 
+body {
+    margin: auto 10%;
+}
+
 .navbar-1 {
     font-family: "Baskerville Old Face";
     color: black;
@@ -31,6 +35,18 @@
     font-family: "Baskerville Old Face";
     color: black;
     text-align: center;
+}
+
+.about-me {
+    font-family: "Baskerville Old Face";
+    color: black;
+    text-align: left;
+}
+
+.subscribe {
+    font-family: "Baskerville Old Face";
+    color: black;
+    text-align: right;
 }
 
 .official-color {
