@@ -6,27 +6,21 @@
 <link rel="stylesheet" href="css/login.css">
 <!------ Include the above in your HEAD tag ---------->
 
-<div class="sidenav">
-   <div class="login-main-text">
-      <h2>Application<br> Register Page</h2>
-      <p>Register from here to access.</p>
-   </div>
-</div>
 <div class="main">
    <div class="col-md-6 col-sm-12">
       <div class="login-form">
          <form method="post">
             <div class="form-group">
                <label>User Name</label>
-               <input name="username" type="text" class="form-control" placeholder="User Name">
+               <input name="username" type="text" required="username" class="form-control" placeholder="User Name">
             </div>
             <div class="form-group">
                <label>Password</label>
-               <input name="password" type="password" class="form-control" placeholder="Password">
+               <input name="password" type="password" required="password" class="form-control" placeholder="Password">
             </div>
 	    <div class="form-group">
-	    	<label for="e-mail">E-Mail</label>
-		<input name="e-mail" type="e-mail" class="form-control" placeholder="E-Mail">
+	    	<label for="email">E-Mail</label>
+		<input name="email" type="e-mail" required="email" class="form-control" placeholder="E-Mail">
 	    </div>
             <button type="submit" class="btn btn-secondary">Register</button>
          </form>
@@ -34,12 +28,8 @@
    </div>
 </div>
 <?php
-$username = $_POST["username"];
-$password = $_POST["password"];
-echo $username;
-echo $password;
-$enable_mysql = false;
-if ($enable_mysql && $username != null && $password != null) {
+$enable_mysql = true;
+if ($enable_mysql && $_POST['username']!=null && $_POST['password']!=null && $_POST['email']!=null) {
    $servername = "localhost";
    $username = "min20120907";
    $password = "jefflin123";
@@ -52,8 +42,8 @@ if ($enable_mysql && $username != null && $password != null) {
       die("Connection failed: " . $conn->connect_error);
    }
 
-   $sql = "INSERT INTO MyGuests (firstname, lastname, email)
-VALUES ('John', 'Doe', 'john@example.com')";
+   $sql = "INSERT INTO Accounts (username, email, password)
+VALUES ('". $_POST['username'] . "', '". $_POST['email'] . "', '" . $_POST['password'] . "')";
 
    if ($conn->query($sql) === TRUE) {
       echo "New record created successfully";
