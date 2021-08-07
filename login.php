@@ -5,12 +5,6 @@
 <link rel="stylesheet" href="css/login.css">
 <!------ Include the above in your HEAD tag ---------->
 
-<div class="sidenav">
-   <div class="login-main-text">
-      <h2>Application<br> Login Page</h2>
-      <p>Login or register from here to access.</p>
-   </div>
-</div>
 <div class="main">
    <div class="col-md-6 col-sm-12">
       <div class="login-form">
@@ -30,33 +24,29 @@
    </div>
 </div>
 <?php
-$username = $_POST["username"];
-$password = $_POST["password"];
-echo $username;
-echo $password;
-$enable_mysql = false;
-if ($enable_mysql && $username != null && $password != null) {
-   $servername = "localhost";
-   $username = "min20120907";
-   $password = "jefflin123";
-   $dbname = "ii525";
+$username_usr = $_POST["username"];
+$password_usr = $_POST["password"];
 
-   // Create connection
-   $conn = new mysqli($servername, $username, $password, $dbname);
-   // Check connection
-   if ($conn->connect_error) {
-      die("Connection failed: " . $conn->connect_error);
-   }
+$servername = "localhost";
+$username = "min20120907";
+$password = "jefflin123";
+$dbname = "ii525";
 
-   $sql = "INSERT INTO MyGuests (firstname, lastname, email)
-VALUES ('John', 'Doe', 'john@example.com')";
-
-   if ($conn->query($sql) === TRUE) {
-      echo "New record created successfully";
-   } else {
-      echo "Error: " . $sql . "<br>" . $conn->error;
-   }
-
-   $conn->close();
+// Create connection
+$conn = new mysqli($servername, $username, $password, $dbname);
+// Check connection
+if ($conn->connect_error) {
+   die("Connection failed: " . $conn->connect_error);
 }
+
+$sql = "SELECT username, password FROM Accounts WHERE username='" . $username_usr . "' AND password='" . $password_usr . "'";
+$result = $conn->query($sql);
+
+if ($result->num_rows > 0) {
+   echo "Login Successfully!";
+} else {
+   echo "0 results";
+}
+$conn->close();
+
 ?>
