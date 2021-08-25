@@ -13,10 +13,12 @@
 <body>
     <!--Navigation bar-->
     <div class="navbar-1">
-        <ul class="nav justify-content-center">
-            <a class="navbar-brand" href="#">
-                <img src="images/iilogo.png" width="75pt" height="75pt" class="d-inline-block align-top" alt="">
+    <a class="navbar-brand" href="#" style="position: absolute;">
+                <img src="images/iilogo.png" width="75pt" height="75pt" style="margin-top: -8pt;" class="d-inline-block align-top" alt="">
             </a>
+        <ul class="nav justify-content-center">
+            
+            
             <li class="nav-item">
                 <a class="nav-link navbar-1" href="#">New</a>
             </li>
@@ -32,6 +34,7 @@
         </ul>
     </div>
     <!--Banner slider gallery-->
+    <!--square images for the items-->
     <div class="carousel-1">
         <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
             <ol class="carousel-indicators">

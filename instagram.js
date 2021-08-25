@@ -15,6 +15,6 @@ let postWidth = width / 3;
 
 for (let i = 0; i < instagram_URLS.length; i++) {
     let section = document.getElementById("insta-" + i);
-    let GET_URL = "https://graph.facebook.com/v11.0/instagram_oembed?url=" + instagram_URLS[i] + "&access_token=";
+    let GET_URL = "https://graph.facebook.com/v11.0/instagram_oembed?url=" + instagram_URLS[i] + "&access_token=1865544480130566|0fbc3bf053544b7d4a38bc72e315674f";
     $.getJSON(GET_URL, function(data) { section.appendChild(data.html); });
 }

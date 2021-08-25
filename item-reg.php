@@ -15,25 +15,40 @@
 						<label>Username</label>
 						<input name="username" type="text" required="text">
 					</div>
+
 					<div class="form-group">
 						<label for="password">Password</label>
 						<input name="password" type="password" required="password" class="form-control">
 					</div>
+					
 					<div class="form-group">
 						<label>Item Name</label>
 						<input name="itemName" type="text" required="text" class="form-control">
 					</div>
+					
 					<div class="form-group">
 						<label>Item Price</label>
 						<input name="itemPrice" type="text" required="text" class="form-control">
 					</div>
+					
 					<div class="form-group">
 						<label>Item Stock</label>
 						<input name="itemStock" type="text" required="text" class="form-control">
 					</div>
+					
+					<div class="form-group">
+						<label for="Deduction">Deduction</label>
+						<input name="Deduction" type="text" class="form-control">
+					</div>
+					
 					<div class="form-group">
 						<label>Item Picture</label>
-						<input name="itemPic" type="file">
+						<input name="itemPic[]" type="file" multiple="multiple">
+					</div>
+					
+					<div class="form-group">
+						<label for="Description">HTML Description</label>
+						<input type="text" name="Description" class="form-control" >
 					</div>
 					<input type="submit" value="Register Item" class="btn btn-secondary">
 				</form>
