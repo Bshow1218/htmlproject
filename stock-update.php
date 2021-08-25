@@ -31,7 +31,7 @@
 <body>
     <nav class="navbar navbar-light bg-light d-flex justify-content-center">
         <div class="container">
-            <a class="navbar-brand" href="#">
+            <a class="navbar-brand" href="https://shipaicraft.asuscomm.com/htmlproject">
                 <img src="images/iilogo.png" alt="" width="50pt" height="50pt">
             </a>
             <div class="flex-row-reverse">
