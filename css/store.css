@@ -1,0 +1,19 @@
+@font-face {
+    font-family: "Baskerville Old Face";
+    src: url(../ttf/font1.ttf);
+}
+
+body {
+    margin: auto 10%;
+}
+
+.navbar-1 {
+    font-family: "Baskerville Old Face";
+    color: black;
+    font-size: 18pt;
+}
+
+#sidebar-1 {
+    font-family: "Baskerville Old Face";
+    color: #8699B1;
+}

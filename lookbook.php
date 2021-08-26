@@ -6,8 +6,8 @@
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="css/main.css">
-    <title>ii525 わたしの世界</title>
+    <link rel="stylesheet" href="css/lookbook.css">
+    <title>Lookbook | ii525 わたしの世界</title>
 </head>
 
 <body>
@@ -20,7 +20,7 @@
             
         <div style="width: 450pt"></div>
             <li class="nav-item">
-                <a class="nav-link navbar-1" href="stock-update.php">New</a>
+                <a class="nav-link navbar-1" href="#">New</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link navbar-1" href="#">All</a>
@@ -29,7 +29,7 @@
                 <a class="nav-link navbar-1" href="#">Story</a>
             </li>
             <li class="nav-item">
-                <a href="lookbook.php" class="nav-link navbar-1">Lookbook</a>
+                <a href="#" class="nav-link navbar-1">Lookbook</a>
             </li>
             <div style="width: 250pt"></div>
             <div class="flex-row-reverse">
@@ -42,50 +42,8 @@
         </ul>
         
     </div>
-    <!--Banner slider gallery-->
-    <!--square images for the items-->
-    <div class="carousel-1">
-        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-            <ol class="carousel-indicators">
-                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-            </ol>
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img class="d-block w-100" src="images/slider1.png" alt="First slide">
-                </div>
-                <div class="carousel-item">
-                    <img class="d-block w-100" src="images/slider2.png" alt="Second slide">
-                </div>
-            </div>
-            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-                <span class="official-color" aria-hidden="true"> < </span>
-                <span class="sr-only"></span>
-            </a>
-            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-                <span class="official-color" aria-hidden="true"> > </span>
-                <span class="sr-only"></span>
-            </a>
-        </div>
-    </div>
-    <div class="newitems">
-        <h1>New Items</h1>
-    </div>
-    <div class="skirts">
-        <h1>Skirts</h1>
-    </div>
-    <div class="youtube">
-        <h1>YouTube</h1>
-    </div>
-    <div class="insta">
-        <h1>Instagram</h1>
-        <div class="insta-1"></div>
-        <div class="insta-2"></div>
-        <div class="insta-3"></div>
-        <div class="insta-4"></div>
-        <div class="insta-5"></div>
-        <div class="insta-6"></div>
+    <div class="lookbook">
+        <h1>Lookbook</h1>
     </div>
 </body>
 <footer>
@@ -104,3 +62,4 @@
 </footer>
 
 </html>
+       

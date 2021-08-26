@@ -9,6 +9,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
     <link href="css/sidebars.css" rel="stylesheet">
+    <link href="css/store.css" rel="stylesheet">
     <script src="js/sidebars.js"></script>
     <style>
         .bd-placeholder-img {
@@ -35,10 +36,11 @@
                 <img src="images/iilogo.png" alt="" width="50pt" height="50pt">
             </a>
             <div class="flex-row-reverse">
-                <button class='btn p-3' id="user" style="background-image: url('images/btns/profile.svg');background-size: cover;border: none;width: 20pt;height: 20pt;" ></button>
-                <button class='btn p-3' id="favorite" style="background-image: url('images/btns/heart.svg');background-size: cover;border: none;width: 20pt;height: 20pt;"></button>
-                <button class="btn p-3" id="search" style="background-image: url('images/btns/search.svg');background-size: cover;border: none;width: 20pt;height: 20pt;"></button>
-                <button class="btn p-3" id="cart" style="background-image: url('images/btns/shopping-cart.svg');background-size: cover;border: none;width: 20pt;height: 20pt;"></button>
+                <button class='btn mx-2' id="user" style="background-image: url('images/btns/profile.svg');background-size: cover;border: none;width: 20pt;height: 20pt;" ></button>
+                <button class='btn mx-2' id="favorite" style="background-image: url('images/btns/heart.svg');background-size: cover;border: none;width: 20pt;height: 20pt;"></button>
+                <button class="btn mx-2" id="search" style="background-image: url('images/btns/search.svg');background-size: cover;border: none;width: 20pt;height: 20pt;"></button>
+                <button class="btn mx-2" id="cart" style="background-image: url('images/btns/shopping-cart.svg');background-size: cover;border: none;width: 20pt;height: 20pt;"></button>
+                <button class="btn mx-2" id="menu" style="background-image: url('images/btns/menu.svg');background-size: cover;border: none;width: 20pt;height: 20pt;"></button>
                 
             </div>
         </div>
@@ -49,7 +51,7 @@
                 <svg class="bi me-2" width="30" height="24">
                     <use xlink:href="#bootstrap"></use>
                 </svg>
-                <span class="fs-5 fw-semibold">ii525</span>
+                <span class="fs-5 fw-semibold" style='color: #8699B1;font-family: "Baskerville Old Face";'>ii525</span>
             </a>
             <ul class="list-unstyled ps-0">
                 <li class="mb-1">
@@ -142,8 +144,8 @@
                     echo "
         <style>
         .item-$i{
-            height: 100pt;
-            width: 100pt;
+            height: 200pt;
+            width: 200pt;
         background-image: url('$picPath');
         background-size: cover;
         }
@@ -163,8 +165,9 @@
             border: none;
         }
         .item-$i .btn{
-            width: 15pt;
-            height: 15pt;
+            width: 24pt;
+            height: 24pt;
+            margin: 0 5pt 0 0;
             display: none;
         }
         .item-$i:hover .btn{
