@@ -13,34 +13,35 @@
 <body>
     <!--Navigation bar-->
     <div class="navbar-1">
-    <a class="navbar-brand" href="#" style="position: absolute;">
-                <img src="images/iilogo.png" width="75pt" height="75pt" style="margin-top: -8pt;" class="d-inline-block align-top" alt="">
+
+        <ul class="nav justify-content-around">
+            <a class="navbar-brand" href="index.php">
+                <img src="images/iilogo.png" width="75pt" height="75pt" style="margin-top: -8pt;" href="index.php" alt="">
             </a>
-        <ul class="nav justify-content-center">
-            
-        <div style="width: 450pt"></div>
-            <li class="nav-item">
-                <a class="nav-link navbar-1" href="stock-update.php">New</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link navbar-1" href="#">All</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link navbar-1" href="#">Story</a>
-            </li>
-            <li class="nav-item">
-                <a href="lookbook.php" class="nav-link navbar-1">Lookbook</a>
-            </li>
-            <div style="width: 250pt"></div>
+            <div class="d-flex justify-content-center">
+
+                <li class="nav-item">
+                    <a class="nav-link navbar-1" href="#">New</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link navbar-1" href="stock-update.php">All</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link navbar-1" href="#">Story</a>
+                </li>
+                <li class="nav-item">
+                    <a href="lookbook.php" class="nav-link navbar-1">Lookbook</a>
+                </li>
+            </div>
+
             <div class="flex-row-reverse">
-                <button class='btn mx-2' id="user" style="background-image: url('images/btns/profile.svg');background-size: cover;border: none;width: 20pt;height: 20pt;" ></button>
+                <button class='btn mx-2' id="user" style="background-image: url('images/btns/profile.svg');background-size: cover;border: none;width: 20pt;height: 20pt;"></button>
                 <button class='btn mx-2' id="favorite" style="background-image: url('images/btns/heart.svg');background-size: cover;border: none;width: 20pt;height: 20pt;"></button>
                 <button class="btn mx-2" id="search" style="background-image: url('images/btns/search.svg');background-size: cover;border: none;width: 20pt;height: 20pt;"></button>
                 <button class="btn mx-2" id="cart" style="background-image: url('images/btns/shopping-cart.svg');background-size: cover;border: none;width: 20pt;height: 20pt;"></button>
-                
             </div>
         </ul>
-        
+
     </div>
     <!--Banner slider gallery-->
     <!--square images for the items-->
@@ -60,8 +61,9 @@
                 </div>
             </div>
             <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-                <span class="official-color" aria-hidden="true"> < </span>
-                <span class="sr-only"></span>
+                <span class="official-color" aria-hidden="true">
+                    < </span>
+                        <span class="sr-only"></span>
             </a>
             <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
                 <span class="official-color" aria-hidden="true"> > </span>
